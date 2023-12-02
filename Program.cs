@@ -1,0 +1,51 @@
+﻿using System;
+namespace VT_Extra
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*------------------------------------------------------------------------------ Ejercicio 1
+             * 
+             *  VAMOS A REALIZAR UNA CUENTA ATRÁS EMPLEANDO LAS 3 ESTRUCTURAS REPETITIVAS QUE CONOCEMOS
+             * 
+             */
+
+            int i = 0;
+
+            //--- Ejemplo 1: While
+            i = 10;
+
+            Console.WriteLine("Esto es una cuenta atrás con un WHILE");
+            while (i > -1)
+            {
+                Console.Write(i + " ");
+
+                i--;
+            }
+            Console.WriteLine(); Console.WriteLine(); //--- Fin de la cuenta atrás con While
+
+            //--- Ejemplo 2: Do-While
+            i = 10;
+
+            Console.WriteLine("Esto es una cuenta atrás con un DO-WHILE");
+            do
+            {
+                Console.Write(i + " ");
+
+                i--;
+            } while (i > -1);
+
+            Console.WriteLine(); Console.WriteLine(); //--- Fin de la cuenta atrás con Do-While
+
+            //--- Ejemplo 3: For
+            Console.WriteLine("Esto es una cuenta atrás con un FOR");
+            for (i = 10; i > -1; i--)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine(); Console.WriteLine(); //--- Fin de la cuenta atrás con For
+        }
+    }
+}
